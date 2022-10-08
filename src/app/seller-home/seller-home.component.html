@@ -14,13 +14,18 @@
         </thead>
         <tbody>
             <tr *ngFor="let item of productList">
-                <td><img src={{item.image}}/></td>
-                <td>{{item.name}}</td>
-                <td>{{item.price}}</td>
-                <td>{{item.color}}</td>
-                <td>{{item.category}}</td>
-                <td>{{item.description}}</td>
-                <td><button (click)="deleteProduct(item.id)">Delete <fa-icon [icon]="icon"></fa-icon></button></td>
+                <td><img src="{{ item.image }}" /></td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+                <td>{{ item.color }}</td>
+                <td>{{ item.category }}</td>
+                <td>{{ item.description }}</td>
+                <td>
+                    <fa-icon (click)="deleteProduct(item.id)" [icon]="deleteIcon"></fa-icon>
+                    <a routerLink="/seller-update-product/{{item.id}}">
+                        <fa-icon [icon]="editIcon"></fa-icon>
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>
