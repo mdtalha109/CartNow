@@ -9,17 +9,17 @@ nav > h1{
     font-size: 40px ;
 }
 
-nav > ul{
+nav  ul{
     display: flex;
     list-style: none;
 }
 
-nav > ul > li{
+nav ul > li{
     padding: 3px;
     margin: 0 10px;
 }
 
-nav > ul > li> a{
+nav ul > li> a{
     color: blueviolet;
     text-decoration: none;
 }
@@ -45,4 +45,10 @@ nav > .nav-search button{
     border-left: 0px;
     height: 35px;
     padding: 0 20px;
+}
+
+
+h1 a {
+    color: blueviolet;
+    text-decoration: none;
 }
