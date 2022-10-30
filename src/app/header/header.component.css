@@ -2,6 +2,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: aqua;
 }
 
 nav > h1{
@@ -27,15 +28,16 @@ nav ul > li> a{
 
 nav > .nav-search{
     display: flex;
-    flex: 0.5;
+    width: 60vw;
 }
 
 nav input{
-    flex: 1;
+    /* flex: 1; */
     color: blueviolet;
     border: 1px solid blueviolet;
     border-right: 0px;
     height: 35px;
+    width: 90%;
 }
 
 nav > .nav-search button{
@@ -44,6 +46,7 @@ nav > .nav-search button{
     border: 1px solid blueviolet;
     border-left: 0px;
     height: 35px;
+    width: 10%;
     padding: 0 20px;
 }
 
@@ -51,4 +54,27 @@ nav > .nav-search button{
 h1 a {
     color: blueviolet;
     text-decoration: none;
+}
+
+
+
+.suggested-result{
+    position: absolute;
+    display: list-item !important;
+    top: 40px;
+    width: 60vw;
+    z-index: 100;
+    border: 1px solid black;
+}
+.suggested-result ul{
+    padding: 0;
+    margin: 0;
+}
+.suggested-result li{
+    border: 1px solid #fff;
+    background-color: black;
+    color: white;
+    list-style: none;
+    left: 0;
+
 }
